@@ -1,3 +1,3 @@
-Hi, my name is tomas, I'm 20 and unfortunately coding is my main interest😃
+Hi, my name is tomas, I'm 21 and coding is my main hobbyl.
 
-I use vim btw
+Checkout some pinned repositories to learn more about what i'm currently doing.
