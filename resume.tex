@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+% \input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+\usepackage{fontspec}
+
+% Set the main font family to Geist
+\setmainfont{Geist-Regular.otf}[
+    ItalicFont = Geist-Light.otf, % Assuming you want Light for italic, or find a specific Italic file if available
+    BoldFont = Geist-Bold.otf,
+    BoldItalicFont = Geist-Medium.otf, % Assuming Medium for bold italic, adjust as needed
+]
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingLink}[3]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small \href{#2}{\underline{#3}}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Tomáš Žifčák} \\ \vspace{4pt}
+    \normalsize
+    \href{https://zifcak.dev}{\underline{www.zifcak.dev}} \quad $|$ \quad
+    \href{https://linkedin.com/in/tomaszifcak/}{\underline{linkedin.com/in/tomaszifcak}} \quad $|$ \quad
+    \href{https://github.com/tomz197/}{\underline{github.com/tomz197}} \\ \vspace{2pt}
+    \underline{tomas.zifcak197@gmail.com} \quad $|$ \quad
+    \href{tel:+421944995915}{\underline{+421 944 995 915}} 
+    \vspace{-8pt}
+\end{center}
+
+%------SUMMARY-------
+\section{Summary}
+Highly motivated developer with 3 years of proven experience in designing, developing, deploying, and maintaining web and mobile applications using React, Python, Next.js, Go, and React Native. 
+    \vspace*{2.0\multicolsep}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Masaryk University}{Sep. 2023 -- June 2026 (Expected)}
+      {Bachelor's degree in Computer Science}{Brno, Czech Republic}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading % For Full Stack Developer - Company name is CORA GEO, Job Title is Full Stack Developer
+      {Full Stack Developer}{Aug 2023 -- Present} % Company Name, Dates
+      {CORA GEO}{Poprad, Slovakia (Remote)} % Job Title, Location
+      \resumeItemListStart
+        \resumeItem{Key member of a small team that designed, developed, and launched a new web portal from scratch to production in under 5 months.}
+        \resumeItem{Developed the full-stack application using Node.js for backend logic and Next.js for the user interface.}
+        \resumeItem{Engaged in diverse set of development tasks, including UI/UX design, API creation, and PostgreSQL database architecture.}
+        \resumeItem{Provided ongoing maintenance, bug fixes, and updates based on user feedback for the deployed applications.}
+      \resumeItemListEnd
+
+    \resumeSubheading % For Frontend Developer - Company name is CORA GEO, Job Title is Frontend Developer
+      {Frontend Developer}{Jul 2022 -- Aug 2023} % Company Name, Dates
+      {CORA GEO}{Poprad, Slovakia (Hybrid)} % Job Title, Location
+      \resumeItemListStart
+        \resumeItem{Led the successful rewrite of 3 legacy mobile applications to one React Native, resulting in less maintenance and notable improvements in performance and user experience.}
+        \resumeItem{Streamlined mobile development by merging multiple applications into a single, unified React Native codebase.}
+        \resumeItem{Designed and implemented new features and UI enhancements for the cross-platform mobile application.}
+        \resumeItem{Mentored and onboarded 4 student interns, guiding them on best practices and project contributions.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeadingLink
+          {\textbf{Bageta Express} $|$ \emph{Next.js, React, Typescript, SQLite, MySQL}}{https://bageta.express}{www.bageta.express}
+          \resumeItemListStart
+            \resumeItem{Developed a web application to streamline school lunch ordering for students and a local restaurant.}
+            \resumeItem{Successfully presented the application to clients (school and restaurant), secured its adoption, and managed initial marketing efforts.}
+            \resumeItem{Engineered the platform using Next.js and TypeScript, enabling users to browse menus and place orders.}
+            \resumeItem{Iteratively developed features based on client feedback, ensuring high reliability for order management and reporting; currently serving active users.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeadingLink
+          {\textbf{Course Recommender} $|$ \emph{Python, React, Content-Based Filtering, Google Cloud}}{https://muni.courses}{www.muni.courses}
+          \resumeItemListStart
+            \resumeItem{Co-developed a course recommendation system to help students discover relevant courses.}
+            \resumeItem{Implemented a content-based filtering algorithms for personalized recommendations and built UI/UX.}
+            \resumeItem{Deployed the application on Google Cloud Platform, establishing an automated CI/CD pipeline.}
+            \resumeItem{Enabled tailored suggestions based on user-selected courses, enhancing course discovery.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeadingLink
+          {\textbf{OS Quiz Platform} $|$ \emph{React.js}}{https://os.zifcak.dev}{os.zifcak.dev}
+          \resumeItemListStart
+            \resumeItem{Created a popular OS quiz web application using React.js, attracting 400+ users (100 weekly active) by providing needed practice resources for university students.}
+            \resumeItem{Designed an interactive and responsive UI to enhance the student learning experience.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeadingLink
+          {\textbf{MongoDB Analyze Tool} $|$ \emph{Go, MongoDB}}{https://github.com/tomz197/mongodb-analyze}{github.com/tomz197/mongodb-analyze}
+          \resumeItemListStart
+            \resumeItem{Developed a command-line tool in Go to analyze MongoDB collections, detecting data types and inconsistencies to aid data structure understanding.}
+            \resumeItem{Provided analysis results in both tabular and JSON formats for ease of use and integration.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, Go, C\#, SQL, C, C++} \\
+     \textbf{Frameworks \& Libraries}{: React, React Native, Node.js, Next.js, Express.js, NestJS} \\
+     \textbf{Developer Tools \& Platforms}{: Git, GitHub, Gitlab, Docker, Kubernetes, Terraform, Google Cloud Platform} \\
+     \textbf{Databases}{: PostgreSQL, SQLite, MongoDB, MySQL, } \\
+     \textbf{Concepts}{: UI/UX Design, CI/CD, Machine Learning}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------INVOLVEMENT---------------
+% Section removed as per request
+
+\end{document}
